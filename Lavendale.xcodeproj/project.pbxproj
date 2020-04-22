@@ -18,6 +18,8 @@
 		37F742D5244FC5640003A95E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742D4244FC5640003A95E /* HomeView.swift */; };
 		37F742D8244FCF5B0003A95E /* Morjuis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F742D7244FCF5B0003A95E /* Morjuis.ttf */; };
 		37F742DA244FCF6B0003A95E /* PollyRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */; };
+		37F742E02450A5620003A95E /* paitentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742DF2450A5620003A95E /* paitentView.swift */; };
+		37F742E52450ACFC0003A95E /* sample data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742E42450ACFC0003A95E /* sample data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		37F742D4244FC5640003A95E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		37F742D7244FCF5B0003A95E /* Morjuis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morjuis.ttf; sourceTree = "<group>"; };
 		37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PollyRounded-Regular.ttf"; sourceTree = "<group>"; };
+		37F742DF2450A5620003A95E /* paitentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paitentView.swift; sourceTree = "<group>"; };
+		37F742E42450ACFC0003A95E /* sample data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sample data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				37F742C2244FBB610003A95E /* ContentView.swift */,
 				37F742D2244FC4960003A95E /* DonorView.swift */,
 				37F742D4244FC5640003A95E /* HomeView.swift */,
+				37F742DF2450A5620003A95E /* paitentView.swift */,
+				37F742E42450ACFC0003A95E /* sample data.swift */,
 				37F742D6244FCF500003A95E /* Fonts */,
 				37F742C4244FBB620003A95E /* Assets.xcassets */,
 				37F742C9244FBB620003A95E /* LaunchScreen.storyboard */,
@@ -171,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F742E52450ACFC0003A95E /* sample data.swift in Sources */,
 				37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */,
+				37F742E02450A5620003A95E /* paitentView.swift in Sources */,
 				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
 				37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */,
 				37F742D5244FC5640003A95E /* HomeView.swift in Sources */,
@@ -313,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -333,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

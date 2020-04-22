@@ -16,12 +16,13 @@ struct ContentView: View {
 
     var body: some View {
         TabView{
+            HomeView().tabItem{
+                          Text("Home")
+                      }
             DonorView().tabItem{
                 Text("Donors")
             }
-            HomeView().tabItem{
-                Text("Home")
-            }
+          
             
         }
     }

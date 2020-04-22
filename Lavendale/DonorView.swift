@@ -43,19 +43,22 @@ struct DonorView: View {
                         MapView3().edgesIgnoringSafeArea(.all)
                                    }
                    else if selectedMap == 0 && selectedDisplay == 0{
-                        List() {
-                            Text("List One")
+                        List(0 ..< 10) { item in
+                            malepatient1()
+                          
                         }
+                        
                     }
                     else if selectedMap == 1 && selectedDisplay == 0{
-                        List() {
-                            Text("List Two")
-                        }
-                    }
+                        List(0 ..< 10) { item in
+                                                  malepatient2()
+                                                
+                                              }                    }
                     else if selectedMap == 2 && selectedDisplay == 0{
-                        List() {
-                            Text("List 3")
-                        }
+                         List(0 ..< 10) { item in
+                                                  femalepatient3()
+                                                
+                                              }
                                    }
                    
                 }

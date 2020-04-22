@@ -14,6 +14,10 @@
 		37F742C5244FBB620003A95E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F742C4244FBB620003A95E /* Assets.xcassets */; };
 		37F742C8244FBB620003A95E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F742C7244FBB620003A95E /* Preview Assets.xcassets */; };
 		37F742CB244FBB620003A95E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F742C9244FBB620003A95E /* LaunchScreen.storyboard */; };
+		37F742D3244FC4960003A95E /* DonorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742D2244FC4960003A95E /* DonorView.swift */; };
+		37F742D5244FC5640003A95E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742D4244FC5640003A95E /* HomeView.swift */; };
+		37F742D8244FCF5B0003A95E /* Morjuis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F742D7244FCF5B0003A95E /* Morjuis.ttf */; };
+		37F742DA244FCF6B0003A95E /* PollyRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		37F742C7244FBB620003A95E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37F742CA244FBB620003A95E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F742CC244FBB620003A95E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F742D2244FC4960003A95E /* DonorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorView.swift; sourceTree = "<group>"; };
+		37F742D4244FC5640003A95E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37F742D7244FCF5B0003A95E /* Morjuis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Morjuis.ttf; sourceTree = "<group>"; };
+		37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PollyRounded-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,9 @@
 				37F742BB244FBB610003A95E /* AppDelegate.swift */,
 				37F742BD244FBB610003A95E /* SceneDelegate.swift */,
 				37F742C2244FBB610003A95E /* ContentView.swift */,
+				37F742D2244FC4960003A95E /* DonorView.swift */,
+				37F742D4244FC5640003A95E /* HomeView.swift */,
+				37F742D6244FCF500003A95E /* Fonts */,
 				37F742C4244FBB620003A95E /* Assets.xcassets */,
 				37F742C9244FBB620003A95E /* LaunchScreen.storyboard */,
 				37F742CC244FBB620003A95E /* Info.plist */,
@@ -76,6 +87,15 @@
 				37F742C7244FBB620003A95E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37F742D6244FCF500003A95E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				37F742D7244FCF5B0003A95E /* Morjuis.ttf */,
+				37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F742DA244FCF6B0003A95E /* PollyRounded-Regular.ttf in Resources */,
+				37F742D8244FCF5B0003A95E /* Morjuis.ttf in Resources */,
 				37F742CB244FBB620003A95E /* LaunchScreen.storyboard in Resources */,
 				37F742C8244FBB620003A95E /* Preview Assets.xcassets in Resources */,
 				37F742C5244FBB620003A95E /* Assets.xcassets in Resources */,
@@ -150,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */,
+				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
 				37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */,
+				37F742D5244FC5640003A95E /* HomeView.swift in Sources */,
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
 				37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */,
 			);
@@ -300,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HealthCare.Lavendale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HealthCare.Lavendale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

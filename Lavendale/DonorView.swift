@@ -12,59 +12,83 @@ import MapKit
 
 struct DonorView: View {
     init(){
-           UINavigationBar.appearance().largeTitleTextAttributes = [
-               .foregroundColor: UIColor.black,
-               .font : UIFont(name:"Morjuis", size: 32)!]
-       }
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .foregroundColor: UIColor.black,
+            .font : UIFont(name:"Morjuis", size: 32)!]
+    }
     var maps = ["Tier One", "Tier Two","Tier Three"]
-     @State var selectedMap = 0
-     var displayTypes = ["List View","Mapview"]
-     @State var selectedDisplay = 0
+    @State var selectedMap = 0
+    
+    var displayTypes = ["List View","Mapview"]
+    @State var selectedDisplay = 0
+    var filterType = ["All","Filtered"]
+    @State var selectedFilter = 0
+    
+    
     var body: some View {
-               NavigationView {
-                VStack{
+        NavigationView {
+            VStack{
+                Picker(selection: $selectedFilter, label: Text("Choose a map")){
+                    ForEach(0 ..< filterType.count){
+                        Text(self.filterType[$0])
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+                if selectedFilter == 1{
                     Picker(selection: $selectedMap, label: Text("Choose a map")){
                         ForEach(0 ..< maps.count){
                             Text(self.maps[$0])
                         }
-                    }.pickerStyle(SegmentedPickerStyle())
-                    Picker(selection: $selectedDisplay, label: Text("Choose a map")){
-                                   ForEach(0 ..< displayTypes.count){
-                                       Text(self.displayTypes[$0])
-                                   }
-                               }.pickerStyle(SegmentedPickerStyle())
-                    if selectedMap == 0 && selectedDisplay == 1{
-                        MapView1().edgesIgnoringSafeArea(.all)
+                    }.pickerStyle(SegmentedPickerStyle()).animation(.spring())
+                    
+                }
+                Picker(selection: $selectedDisplay, label: Text("Choose a map")){
+                    ForEach(0 ..< displayTypes.count){
+                        Text(self.displayTypes[$0])
                     }
-                    else if selectedMap == 1 && selectedDisplay == 1{
-                        MapView2().edgesIgnoringSafeArea(.all)
-                    }
-                    else if selectedMap == 2 && selectedDisplay == 1{
-                        MapView3().edgesIgnoringSafeArea(.all)
-                                   }
-                   else if selectedMap == 0 && selectedDisplay == 0{
-                        List(0 ..< 10) { item in
-                            malepatient1()
-                          
-                        }
+                }.pickerStyle(SegmentedPickerStyle())
+                
+                if selectedMap == 0 && selectedDisplay == 1{
+                    MapView1().edgesIgnoringSafeArea(.all)
+                }
+                    else if selectedFilter == 0 && selectedDisplay == 0{
+                    List(){
+                        malepatient3()
+                                                          femalepatient1()
+                                                          malepatient2()
+                                              femalepatient2()
+                                                          malepatient2()
+                                                          femalepatient3()                    }
+                }
+            
+                else if selectedMap == 1 && selectedDisplay == 1{
+                    MapView2().edgesIgnoringSafeArea(.all)
+                }
+                else if selectedMap == 2 && selectedDisplay == 1{
+                    MapView3().edgesIgnoringSafeArea(.all)
+                }
+                else if selectedMap == 0 && selectedDisplay == 0{
+                    List(0 ..< 10) { item in
+                        malepatient1()
                         
                     }
-                    else if selectedMap == 1 && selectedDisplay == 0{
-                        List(0 ..< 10) { item in
-                                                  malepatient2()
-                                                
-                                              }                    }
-                    else if selectedMap == 2 && selectedDisplay == 0{
-                         List(0 ..< 10) { item in
-                                                  femalepatient3()
-                                                
-                                              }
-                                   }
-                   
+                    
                 }
-                    .navigationBarTitle("COVID-19 Donors")
+                else if selectedMap == 1 && selectedDisplay == 0{
+                    List(0 ..< 10) { item in
+                        malepatient2()
+                        
+                    }                    }
+                else if selectedMap == 2 && selectedDisplay == 0{
+                    List(0 ..< 10) { item in
+                        femalepatient3()
+                        
+                    }
+                }
+                
             }
-        }    }
+            .navigationBarTitle("COVID-19 Donors")
+        }
+    }    }
 
 
 struct DonorView_Previews: PreviewProvider {

@@ -7,5 +7,11 @@
 //
 
 import Foundation
+import SwiftUI
 
+struct sample: View {
+    var body: some View{
+        Text("Hello")
+    }
+}
 

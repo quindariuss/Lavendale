@@ -41,7 +41,7 @@ struct paitentView: View {
                     HStack {
                         Image(systemName: "heart").foregroundColor(.red)
                         Text("Connect to Apple HealthKit").font(.custom("PollyRounded-Regular", size: 16)).onTapGesture {
-                            autorizeHealthKit()
+                           
                         }
                     }
                     
@@ -59,7 +59,7 @@ struct paitentView: View {
                         DocumentPicker().edgesIgnoringSafeArea(.all)
                     }
                
-                    NavigationLink(destination: heathkittest()) {
+                    NavigationLink(destination: Text("Nil")) {
                         HStack {
                                 Image(systemName: "waveform.path.ecg").foregroundColor(.red)
                                 Text("Log Symptoms").font(.custom("PollyRounded-Regular", size: 16)).navigationBarTitle("Home")
@@ -314,39 +314,5 @@ DatePicker(selection: $startcovidSimp, label: {Text("Last day of symptoms")})
 
 
 
-
-
-struct heathkittest: View {
-    
-    init() {
-                UINavigationBar.appearance().largeTitleTextAttributes = [
-            .foregroundColor: UIColor.black,
-            .font : UIFont(name:"Morjuis", size: 32)!]
-    }
-    var store = HKHealthStore()
-    
-    
-    var body: some View {
-       
-            VStack {
-               Text("Symptoms")
-            }.navigationBarTitle("Log Sympotoms")
-        }
-    
-    
-    func autorizeHealthKit() {
-        let read : Set<HKObjectType> = [
-            
-            HKObjectType.characteristicType(forIdentifier: HKCharacteristicTypeIdentifier.dateOfBirth)!,HKObjectType.characteristicType(forIdentifier: HKCharacteristicTypeIdentifier.bloodType)!
-            
-        ]
-        let write : Set<HKSampleType> = []
-        
-        store.requestAuthorization(toShare: write, read: read){
-            (success, error) -> Void in print("success")
-        }
-    }
-    
-}
 
 

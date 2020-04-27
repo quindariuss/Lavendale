@@ -104,12 +104,17 @@ struct MapView1: UIViewRepresentable{
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
     }
+    func makeCoordinator() -> mapController {
+        mapController(self)}
     func makeUIView(context: Context) -> MKMapView {
         setupManager()
-        let mapView = MKMapView(frame: UIScreen.main.bounds)
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
-        return mapView
+      let map = MKMapView(frame: UIScreen.main.bounds)
+                      map.showsUserLocation = true
+                      //useless without the MKMapView setting the frame
+                      map.userTrackingMode = .none
+                      map.delegate = context.coordinator
+                      map.addAnnotation(annotation(title: "Donor", subtitle:"Teir One", coordinate: CLLocationCoordinate2D(latitude: 43.063, longitude: -84.4424)))
+                      return map
     }
     func updateUIView(_ view: MKMapView, context: Context){ }
     
@@ -122,31 +127,104 @@ struct MapView2: UIViewRepresentable{
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
     }
+    func makeCoordinator() -> mapController2 {
+           mapController2(self)
+       }
     func makeUIView(context: Context) -> MKMapView {
-        setupManager()
-        let mapView = MKMapView(frame: UIScreen.main.bounds)
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
-        return mapView
+       let map = MKMapView(frame: UIScreen.main.bounds)
+                      map.showsUserLocation = true
+                      //useless without the MKMapView setting the frame
+                      map.userTrackingMode = .none
+                      map.delegate = context.coordinator
+                      map.addAnnotation(annotation(title: "Donor", subtitle:"Teir One", coordinate: CLLocationCoordinate2D(latitude: 43.063, longitude: -84.4424)))
+                      return map
     }
     func updateUIView(_ view: MKMapView, context: Context){ }
     
 }
 
 struct MapView3: UIViewRepresentable{
+
     var locationManager = CLLocationManager()
     func setupManager() {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestAlwaysAuthorization()
     }
+    func makeCoordinator() -> mapController3 {
+           mapController3(self)
+       }
     func makeUIView(context: Context) -> MKMapView {
         setupManager()
-        let mapView = MKMapView(frame: UIScreen.main.bounds)
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = .follow
-        return mapView
+       let map = MKMapView(frame: UIScreen.main.bounds)
+               map.showsUserLocation = true
+               //useless without the MKMapView setting the frame
+               map.userTrackingMode = .none
+               map.delegate = context.coordinator
+               map.addAnnotation(annotation(title: "Donor", subtitle:"Teir One", coordinate: CLLocationCoordinate2D(latitude: 43.063, longitude: -84.4424)))
+               return map
     }
-    func updateUIView(_ view: MKMapView, context: Context){ }
+    func updateUIView(_ view: MKMapView, context: Context){
     
+    }
+    
+}
+class annotation : NSObject, MKAnnotation{
+init(title: String?, subtitle: String?, coordinate: CLLocationCoordinate2D) {
+    self.title = title
+    self.subtitle = subtitle
+    self.coordinate = coordinate
+}
+
+let title: String?
+let subtitle: String?
+let coordinate: CLLocationCoordinate2D
+
+}
+class mapController : NSObject, MKMapViewDelegate{
+    var mapcontroller : MapView1
+    
+    init(_ control: MapView1){
+        self.mapcontroller = control
+    }
+    
+    func mapView(_ view : MKMapView, viewFor
+        annotation: MKAnnotation)-> MKAnnotationView?{
+        let view = MKAnnotationView(annotation: annotation, reuseIdentifier: "view")
+        view.canShowCallout = true
+        view.image = UIImage(named: "01.circle.fill")
+        return view
+    }
+}
+
+class mapController2 : NSObject, MKMapViewDelegate{
+    var mapcontroller : MapView2
+    
+    init(_ control: MapView2){
+        self.mapcontroller = control
+    }
+    
+    func mapView(_ view : MKMapView, viewFor
+        annotation: MKAnnotation)-> MKAnnotationView?{
+        let view = MKAnnotationView(annotation: annotation, reuseIdentifier: "view")
+        view.canShowCallout = true
+        view.image = UIImage(named: "02.circle.fill")
+        return view
+    }
+}
+
+class mapController3 : NSObject, MKMapViewDelegate{
+    var mapcontroller : MapView3
+    
+    init(_ control: MapView3){
+        self.mapcontroller = control
+    }
+    
+    func mapView(_ view : MKMapView, viewFor
+        annotation: MKAnnotation)-> MKAnnotationView?{
+        let view = MKAnnotationView(annotation: annotation, reuseIdentifier: "view")
+        view.canShowCallout = true
+        view.image = UIImage(named: "03.circle.fill")
+        return view
+    }
 }

@@ -117,7 +117,7 @@ struct paitentView: View {
                 }.buttonStyle(PlainButtonStyle()))
                 
             }
-        .navigationBarTitle("").navigationBarHidden(true)
+        .navigationBarTitle("Patient")
     }
 }
 

@@ -12,15 +12,17 @@ import SwiftUI
 
 
 struct ContentView: View {
-    
-
+   
     var body: some View {
         TabView{
+ 
             HomeView().tabItem{
                           Text("Home")
+                Image(systemName: "house")
                       }
             DonorView().tabItem{
                 Text("Donors")
+                Image(systemName: "person.3")
             }
           
             

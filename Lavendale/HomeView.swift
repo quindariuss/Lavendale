@@ -1503,3 +1503,11 @@ struct malepatient3: View {
         }
     }
 }
+
+struct patient_: View {
+    var num1 =   patient(name: "hello", phoneNumber: "hello", bloodType: "hello")
+
+    var body: some View{
+        Text("\(num1.name)")
+    }
+}

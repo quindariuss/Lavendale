@@ -22,6 +22,7 @@
 		37F742E02450A5620003A95E /* paitentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742DF2450A5620003A95E /* paitentView.swift */; };
 		37F742E52450ACFC0003A95E /* sample data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742E42450ACFC0003A95E /* sample data.swift */; };
 		37F742E82450D06E0003A95E /* patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742E72450D06D0003A95E /* patient.swift */; };
+		37F8C7332458D38800409F34 /* testing charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F8C7322458D38800409F34 /* testing charts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		37F742DF2450A5620003A95E /* paitentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paitentView.swift; sourceTree = "<group>"; };
 		37F742E42450ACFC0003A95E /* sample data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sample data.swift"; sourceTree = "<group>"; };
 		37F742E72450D06D0003A95E /* patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patient.swift; sourceTree = "<group>"; };
+		37F8C7322458D38800409F34 /* testing charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "testing charts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				37F742E62450D05F0003A95E /* Model */,
 				37F742D4244FC5640003A95E /* HomeView.swift */,
 				3799D7092456834300EECDFB /* testing schedule.swift */,
+				37F8C7322458D38800409F34 /* testing charts.swift */,
 				37F742DF2450A5620003A95E /* paitentView.swift */,
 				37F742E42450ACFC0003A95E /* sample data.swift */,
 				37F742D6244FCF500003A95E /* Fonts */,
@@ -201,6 +204,7 @@
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
 				3799D70A2456834300EECDFB /* testing schedule.swift in Sources */,
 				37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */,
+				37F8C7332458D38800409F34 /* testing charts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -358,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

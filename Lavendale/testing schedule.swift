@@ -32,6 +32,23 @@ struct testing_schedule: View {
                 }
                 
             }
+                HStack {
+                          Rectangle()
+                          .frame(width: 7, height: 50)
+                          .cornerRadius(20)
+                          .foregroundColor(.red)
+                          Text("\(maleName.randomElement()!)")
+                          
+                          Spacer()
+                          Text("12:00 PM").padding(6.0).background(Color.gray).cornerRadius(20)
+                          Spacer()
+                          HStack(spacing: 16){
+                                         Image(systemName: "phone")
+                                         Image(systemName: "bubble.left").padding(.vertical, 16.0)
+                                         Image(systemName: "gobackward")
+                          }
+                          
+                      }
             .padding(.horizontal, 16.0)
             HStack {
                 Text("Tomorrow").font(.custom("Morjuis", size: 21))

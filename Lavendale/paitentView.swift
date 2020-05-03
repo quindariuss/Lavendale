@@ -9,6 +9,8 @@
 import SwiftUI
 import HealthKit
 
+let chatHelper = ChatHelper()
+
 var store = HKHealthStore()
 struct paitentView: View {
     @State var showDocs = false
@@ -38,16 +40,19 @@ struct paitentView: View {
                 
                 
                 VStack(alignment: .leading, spacing: 36) {
-                    HStack {
-                        Image(systemName: "heart").foregroundColor(.red)
-                        Text("Connect to Apple HealthKit").font(.custom("PollyRounded-Regular", size: 16)).onTapGesture {
-                           
+                      NavigationLink(destination: ChatView().environmentObject(chatHelper)) {
+                        HStack {
+                            Image(systemName: "bubble.left").foregroundColor(.red)
+                            Text("Message Donor").font(.custom("PollyRounded-Regular", size: 16))
                         }
-                    }
+                    }.buttonStyle(PlainButtonStyle())
                     
                     HStack {
-                        Image(systemName: "map").foregroundColor(.red)
-                        Text("Allow Location Discovery").font(.custom("PollyRounded-Regular", size: 16)).navigationBarTitle("Home").onTapGesture {
+                        Image(systemName: "phone").foregroundColor(.red)
+                        Text("Call Donor").font(.custom("PollyRounded-Regular", size: 16)).navigationBarTitle("Home").onTapGesture {
+                            let telephone = "tel://704-470-7036"
+                            guard let url = URL(string: telephone) else { return }
+                            UIApplication.shared.open(url)
                         }
                     }
                     HStack {

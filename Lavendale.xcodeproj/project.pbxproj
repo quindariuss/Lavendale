@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F830245CDAC300ACBD1E /* newCharts.swift */; };
+		3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F852245F4C1A00ACBD1E /* ChatView.swift */; };
 		3799D70A2456834300EECDFB /* testing schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D7092456834300EECDFB /* testing schedule.swift */; };
 		37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BB244FBB610003A95E /* AppDelegate.swift */; };
 		37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BD244FBB610003A95E /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3788F830245CDAC300ACBD1E /* newCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newCharts.swift; sourceTree = "<group>"; };
+		3788F852245F4C1A00ACBD1E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3799D7092456834300EECDFB /* testing schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "testing schedule.swift"; sourceTree = "<group>"; };
 		37F742B8244FBB610003A95E /* Lavendale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lavendale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F742BB244FBB610003A95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				37F742D2244FC4960003A95E /* DonorView.swift */,
 				37F742E62450D05F0003A95E /* Model */,
 				37F742D4244FC5640003A95E /* HomeView.swift */,
+				3788F830245CDAC300ACBD1E /* newCharts.swift */,
+				3788F852245F4C1A00ACBD1E /* ChatView.swift */,
 				3799D7092456834300EECDFB /* testing schedule.swift */,
 				37F8C7322458D38800409F34 /* testing charts.swift */,
 				37F742DF2450A5620003A95E /* paitentView.swift */,
@@ -199,6 +205,8 @@
 				37F742E02450A5620003A95E /* paitentView.swift in Sources */,
 				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
 				37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */,
+				3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */,
+				3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */,
 				37F742D5244FC5640003A95E /* HomeView.swift in Sources */,
 				37F742E82450D06E0003A95E /* patient.swift in Sources */,
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
@@ -341,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -362,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

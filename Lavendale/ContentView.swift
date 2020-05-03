@@ -24,7 +24,7 @@ struct ContentView: View {
                 Text("Donors")
                 Image(systemName: "person.3")
             }
-            testing_charts().tabItem{
+            newCharts().tabItem{
                          Text("Tally")
                          Image(systemName: "chart.bar")
                      }

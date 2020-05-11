@@ -28,6 +28,7 @@ struct ContentView: View {
                          Text("Tally")
                          Image(systemName: "chart.bar")
                      }
+      
           
             
         }

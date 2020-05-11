@@ -43,9 +43,9 @@ struct newCharts: View {
                     
                     ZStack {
                         //                        curvy2().offset(x: -(geo.size.width * CGFloat(Int(self.selectedBloodType))), y: -20).fill(Color.red).blendMode(.hardLight).animation(.spring())
-                        curvy2().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).blendMode(.hardLight).animation(.spring()).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
+                        curvy2().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).blendMode(.hardLight).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
 
-                        curvy().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).animation(.spring()).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
+                        curvy().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
                         
                     }
                 }.navigationBarTitle("Blood Needed Beta")

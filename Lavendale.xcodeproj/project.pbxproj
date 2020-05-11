@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F830245CDAC300ACBD1E /* newCharts.swift */; };
 		3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F852245F4C1A00ACBD1E /* ChatView.swift */; };
+		3788F8572464578F00ACBD1E /* testingschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F8562464578F00ACBD1E /* testingschedule.swift */; };
+		3788F8592464797D00ACBD1E /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F8582464797D00ACBD1E /* Today.swift */; };
+		3788F85B2464798600ACBD1E /* Tomorrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F85A2464798600ACBD1E /* Tomorrow.swift */; };
+		3788F85D2464798C00ACBD1E /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F85C2464798C00ACBD1E /* Week.swift */; };
+		3793A3B8246790A0002B9A14 /* choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793A3B7246790A0002B9A14 /* choice.swift */; };
 		3799D70A2456834300EECDFB /* testing schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D7092456834300EECDFB /* testing schedule.swift */; };
+		37B1EEA624685EC1005C3354 /* fhirmaptesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */; };
+		37B1EEA82468AE9D005C3354 /* does it work?.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEA72468AE9D005C3354 /* does it work?.swift */; };
+		37B1EEFF2469CF05005C3354 /* FHIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEFE2469CF05005C3354 /* FHIR.swift */; };
 		37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BB244FBB610003A95E /* AppDelegate.swift */; };
 		37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BD244FBB610003A95E /* SceneDelegate.swift */; };
 		37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BF244FBB610003A95E /* Lavendale.xcdatamodeld */; };
@@ -30,7 +38,15 @@
 /* Begin PBXFileReference section */
 		3788F830245CDAC300ACBD1E /* newCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newCharts.swift; sourceTree = "<group>"; };
 		3788F852245F4C1A00ACBD1E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		3788F8562464578F00ACBD1E /* testingschedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingschedule.swift; sourceTree = "<group>"; };
+		3788F8582464797D00ACBD1E /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		3788F85A2464798600ACBD1E /* Tomorrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomorrow.swift; sourceTree = "<group>"; };
+		3788F85C2464798C00ACBD1E /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		3793A3B7246790A0002B9A14 /* choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choice.swift; sourceTree = "<group>"; };
 		3799D7092456834300EECDFB /* testing schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "testing schedule.swift"; sourceTree = "<group>"; };
+		37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fhirmaptesting.swift; sourceTree = "<group>"; };
+		37B1EEA72468AE9D005C3354 /* does it work?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "does it work?.swift"; sourceTree = "<group>"; };
+		37B1EEFE2469CF05005C3354 /* FHIR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHIR.swift; sourceTree = "<group>"; };
 		37F742B8244FBB610003A95E /* Lavendale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lavendale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F742BB244FBB610003A95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F742BD244FBB610003A95E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,14 +100,21 @@
 				37F742BD244FBB610003A95E /* SceneDelegate.swift */,
 				37F742C2244FBB610003A95E /* ContentView.swift */,
 				37F742D2244FC4960003A95E /* DonorView.swift */,
+				37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */,
 				37F742E62450D05F0003A95E /* Model */,
 				37F742D4244FC5640003A95E /* HomeView.swift */,
 				3788F830245CDAC300ACBD1E /* newCharts.swift */,
 				3788F852245F4C1A00ACBD1E /* ChatView.swift */,
 				3799D7092456834300EECDFB /* testing schedule.swift */,
+				3788F8582464797D00ACBD1E /* Today.swift */,
+				3788F85A2464798600ACBD1E /* Tomorrow.swift */,
+				3788F85C2464798C00ACBD1E /* Week.swift */,
 				37F8C7322458D38800409F34 /* testing charts.swift */,
+				3788F8562464578F00ACBD1E /* testingschedule.swift */,
+				3793A3B7246790A0002B9A14 /* choice.swift */,
 				37F742DF2450A5620003A95E /* paitentView.swift */,
 				37F742E42450ACFC0003A95E /* sample data.swift */,
+				37B1EEA72468AE9D005C3354 /* does it work?.swift */,
 				37F742D6244FCF500003A95E /* Fonts */,
 				37F742C4244FBB620003A95E /* Assets.xcassets */,
 				37F742C9244FBB620003A95E /* LaunchScreen.storyboard */,
@@ -123,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				37F742E72450D06D0003A95E /* patient.swift */,
+				37B1EEFE2469CF05005C3354 /* FHIR.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,16 +224,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3793A3B8246790A0002B9A14 /* choice.swift in Sources */,
+				37B1EEFF2469CF05005C3354 /* FHIR.swift in Sources */,
 				37F742E52450ACFC0003A95E /* sample data.swift in Sources */,
+				3788F8592464797D00ACBD1E /* Today.swift in Sources */,
+				37B1EEA624685EC1005C3354 /* fhirmaptesting.swift in Sources */,
+				3788F85B2464798600ACBD1E /* Tomorrow.swift in Sources */,
 				37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */,
 				37F742E02450A5620003A95E /* paitentView.swift in Sources */,
 				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
+				37B1EEA82468AE9D005C3354 /* does it work?.swift in Sources */,
 				37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */,
 				3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */,
 				3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */,
 				37F742D5244FC5640003A95E /* HomeView.swift in Sources */,
 				37F742E82450D06E0003A95E /* patient.swift in Sources */,
+				3788F8572464578F00ACBD1E /* testingschedule.swift in Sources */,
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
+				3788F85D2464798C00ACBD1E /* Week.swift in Sources */,
 				3799D70A2456834300EECDFB /* testing schedule.swift in Sources */,
 				37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */,
 				37F8C7332458D38800409F34 /* testing charts.swift in Sources */,
@@ -349,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -370,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

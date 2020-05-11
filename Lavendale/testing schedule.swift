@@ -15,50 +15,37 @@ struct testing_schedule: View {
                 Text("Today").font(.custom("Morjuis", size: 21))
                 Spacer()
             }.padding()
-            HStack {
-                Rectangle()
-                .frame(width: 7, height: 50)
-                .cornerRadius(20)
-                .foregroundColor(.yellow)
-                Text("\(maleName.randomElement()!)")
-                
-                Spacer()
-                Text("12:00 PM").padding(6.0).background(Color.gray).cornerRadius(20)
-                Spacer()
-                HStack(spacing: 16){
-                               Image(systemName: "phone")
-                               Image(systemName: "bubble.left").padding(.vertical, 16.0)
-                               Image(systemName: "gobackward")
-                }
-                
-            }
-                HStack {
-                          Rectangle()
-                          .frame(width: 7, height: 50)
-                          .cornerRadius(20)
-                          .foregroundColor(.red)
-                          Text("\(maleName.randomElement()!)")
-                          
-                          Spacer()
-                          Text("12:00 PM").padding(6.0).background(Color.gray).cornerRadius(20)
-                          Spacer()
-                          HStack(spacing: 16){
-                                         Image(systemName: "phone")
-                                         Image(systemName: "bubble.left").padding(.vertical, 16.0)
-                                         Image(systemName: "gobackward")
-                          }
-                          
+             NavigationLink(destination: Today()) {
+                          HStack {
+                      Spacer()
+                              Text("4 Patients").font(.custom("PollyRounded-Regular", size: 18)).padding().foregroundColor(.black)
+                       Spacer()
+                          }.buttonStyle(PlainButtonStyle()).background(Color(#colorLiteral(red: 0.5490196078, green: 0.8156862745, blue: 0.7725490196, alpha: 1))).cornerRadius(10).padding(.horizontal, 10.0)
                       }
-            .padding(.horizontal, 16.0)
-            HStack {
-                Text("Tomorrow").font(.custom("Morjuis", size: 21))
-                Spacer()
-            }.padding()
+                HStack {
+                    Text("Tomorrow").font(.custom("Morjuis", size: 21))
+                   
+                    Spacer()
+                    }.padding()
             
+            NavigationLink(destination: Tomorrow()) {
+                HStack {
+            Spacer()
+                    Text("16 Patients").font(.custom("PollyRounded-Regular", size: 18)).padding().foregroundColor(.black)
+             Spacer()
+                }.buttonStyle(PlainButtonStyle()).background(Color(#colorLiteral(red: 0.5490196078, green: 0.8156862745, blue: 0.7725490196, alpha: 1))).cornerRadius(10).padding(.horizontal, 10.0)
+            }
             HStack {
                 Text("Week").font(.custom("Morjuis", size: 21))
                 Spacer()
             }.padding()
+              NavigationLink(destination: Week()) {
+                          HStack {
+                      Spacer()
+                              Text("21 Patients").font(.custom("PollyRounded-Regular", size: 18)).padding().foregroundColor(.black)
+                       Spacer()
+                          }.buttonStyle(PlainButtonStyle()).background(Color(#colorLiteral(red: 0.5490196078, green: 0.8156862745, blue: 0.7725490196, alpha: 1))).cornerRadius(10).padding(.horizontal, 10.0)
+                      }
         }
         
     }
@@ -70,3 +57,60 @@ struct testing_schedule_Previews: PreviewProvider {
         
     }
 }
+
+struct malescheduleyellow: View {
+    var body: some View {
+        HStack {
+            NavigationLink(destination: paitentView()) {
+                Rectangle()
+                    .frame(width: 7, height: 50)
+                    .cornerRadius(20)
+                    .foregroundColor(.yellow)
+                Text("\(femaleName.randomElement()!)")
+                
+                Spacer()
+                Text("12:00 PM").padding(6.0).background(Color(#colorLiteral(red: 0.8770394447, green: 1, blue: 0.9118144236, alpha: 1))).cornerRadius(10)
+                
+                
+            }.buttonStyle(PlainButtonStyle())
+        }
+    }
+}
+struct maleschedulegreen: View {
+    var body: some View {
+        NavigationLink(destination: paitentView()) {
+            HStack {
+                Rectangle()
+                    .frame(width: 7, height: 50)
+                    .cornerRadius(20)
+                    .foregroundColor(.green)
+                Text("\(maleName.randomElement()!)")
+                
+                Spacer()
+                Text("12:00 PM").padding(6.0).background(Color(#colorLiteral(red: 0.8770394447, green: 1, blue: 0.9118144236, alpha: 1))).cornerRadius(10)
+                
+                
+            }
+        }.buttonStyle(PlainButtonStyle())
+    }
+}
+
+struct maleschedulered: View {
+    var body: some View {
+        NavigationLink(destination: paitentView()) {
+            HStack {
+                Rectangle()
+                    .frame(width: 7, height: 50)
+                    .cornerRadius(20)
+                    .foregroundColor(.red)
+                Text("\(maleName.randomElement()!)")
+                
+                Spacer()
+                Text("12:00 PM").padding(6.0).background(Color(#colorLiteral(red: 0.8770394447, green: 1, blue: 0.9118144236, alpha: 1))).cornerRadius(10)
+                
+                
+            }
+        }.buttonStyle(PlainButtonStyle())
+    }
+}
+

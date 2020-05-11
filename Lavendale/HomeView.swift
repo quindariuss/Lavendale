@@ -20,46 +20,41 @@ struct HomeView: View {
     }
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "doc.on.doc")
-                    Text("Review Legal Documents")
-                    Spacer()
-                }.padding()
-                HStack {
-                    NavigationLink(destination: patients()) {
-                        Image(systemName: "waveform.path.ecg").foregroundColor(.black)
-                        Text("See Monitered Donors").foregroundColor(.black)
+            ScrollView {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Image(systemName: "doc.on.doc")
+                        Text("Review Legal Documents")
                         Spacer()
                     }.padding()
-                }
-                HStack {
-                    Image(systemName: "calendar")
-                    Text("View Appointments")
-                    Spacer()
-                }.padding()
-                HStack {
-                    Image(systemName: "envelope.badge")
-                    Text("Pending Donors")
-                    Spacer()
-                }.padding()
-                
-                Spacer()
-            }.navigationBarTitle("Home")
+                    HStack {
+                        NavigationLink(destination: patients()) {
+                            Image(systemName: "waveform.path.ecg").foregroundColor(.black)
+                            Text("See Monitered Donors").foregroundColor(.black)
+                            Spacer()
+                        }.padding()
+                    }
+                    HStack {
+                        Image(systemName: "calendar")
+                        Text("View Appointments")
+                        Spacer()
+                    }.padding()
+                    HStack {
+                        Image(systemName: "envelope.badge")
+                        Text("Pending Donors")
+                        Spacer()
+                    }.padding()
+                    testing_schedule().offset(y: -20)
+                }.navigationBarTitle("Home")
+            }
         }
     }
 }
-
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
-
-
-
-
-
 struct patients: View {
     
     
@@ -75,7 +70,6 @@ struct patients: View {
         }.navigationBarTitle("Monitered Donors")
     }
 }
-
 struct femalepatient1: View {
     
     let maleName = [
@@ -319,7 +313,6 @@ struct femalepatient1: View {
         }
     }
 }
-
 struct femalepatient2: View {
     
     let maleName = [
@@ -564,7 +557,6 @@ struct femalepatient2: View {
         }
     }
 }
-
 struct femalepatient3: View {
     
     let maleName = [
@@ -808,7 +800,6 @@ struct femalepatient3: View {
         }
     }
 }
-
 struct malepatient1: View {
     
     let maleName = [
@@ -1052,7 +1043,6 @@ struct malepatient1: View {
         }
     }
 }
-
 struct malepatient2: View {
     
     let maleName = [
@@ -1296,7 +1286,6 @@ struct malepatient2: View {
         }
     }
 }
-
 struct malepatient3: View {
     
     let maleName = [
@@ -1540,7 +1529,6 @@ struct malepatient3: View {
         }
     }
 }
-
 struct patient_: View {
     var num1 =   patient(name: "hello", phoneNumber: "hello", bloodType: "hello")
     

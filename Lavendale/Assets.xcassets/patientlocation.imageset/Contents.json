@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Splash Screen.png",
+      "filename" : "patientlocation.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Splash Screen@2x.png",
+      "filename" : "patientlocation@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Splash Screen@3x.png",
+      "filename" : "patientlocation@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

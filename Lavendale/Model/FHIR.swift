@@ -30,14 +30,23 @@ struct root: Codable  {
     }
     
     
-        struct Name: Codable {
-            var family: String
-            var given: [String]
-        }
+    struct Name: Codable {
+        var family: String
+        var given: [String]
+    }
     
     
-        struct Address: Codable {
-            var city: String
-            var country: String
-        }
+    struct Address: Codable {
+        var city: String
+        var country: String
+        var `extension`: [Extension]
+    }
+    struct Extension: Codable {
+        var `extension`: [`extension`]
+    }
+    
+    struct `extension`: Codable {
+        var valueDecimal : Double
+    }
+    
 }

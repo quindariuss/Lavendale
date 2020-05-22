@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372CAD6324780A9200C195B4 /* newprofiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD6224780A9200C195B4 /* newprofiles.swift */; };
+		372CAD68247843CA00C195B4 /* donorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD67247843CA00C195B4 /* donorProfile.swift */; };
+		372CAD6A2478443500C195B4 /* providerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD692478443500C195B4 /* providerProfile.swift */; };
+		372CAD6C2478445D00C195B4 /* patientProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD6B2478445D00C195B4 /* patientProfile.swift */; };
 		3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F830245CDAC300ACBD1E /* newCharts.swift */; };
 		3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F852245F4C1A00ACBD1E /* ChatView.swift */; };
 		3788F8572464578F00ACBD1E /* testingschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F8562464578F00ACBD1E /* testingschedule.swift */; };
@@ -15,9 +19,39 @@
 		3788F85D2464798C00ACBD1E /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F85C2464798C00ACBD1E /* Week.swift */; };
 		3793A3B8246790A0002B9A14 /* choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3793A3B7246790A0002B9A14 /* choice.swift */; };
 		3799D70A2456834300EECDFB /* testing schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3799D7092456834300EECDFB /* testing schedule.swift */; };
+		37A565C2247025F800D53058 /* bezzy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A565C1247025F700D53058 /* bezzy.swift */; };
+		37A565D82470617B00D53058 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565C52470617B00D53058 /* Barlow-Light.ttf */; };
+		37A565D92470617B00D53058 /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565C62470617B00D53058 /* Barlow-SemiBoldItalic.ttf */; };
+		37A565DA2470617B00D53058 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565C72470617B00D53058 /* Barlow-BoldItalic.ttf */; };
+		37A565DB2470617B00D53058 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565C82470617B00D53058 /* Barlow-ExtraLight.ttf */; };
+		37A565DC2470617B00D53058 /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565C92470617B00D53058 /* Barlow-ThinItalic.ttf */; };
+		37A565DD2470617B00D53058 /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CA2470617B00D53058 /* Barlow-MediumItalic.ttf */; };
+		37A565DE2470617B00D53058 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CB2470617B00D53058 /* Barlow-Italic.ttf */; };
+		37A565DF2470617B00D53058 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CC2470617B00D53058 /* Barlow-ExtraLightItalic.ttf */; };
+		37A565E02470617B00D53058 /* Barlow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CD2470617B00D53058 /* Barlow-ExtraBoldItalic.ttf */; };
+		37A565E12470617B00D53058 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CE2470617B00D53058 /* Barlow-Thin.ttf */; };
+		37A565E22470617B00D53058 /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565CF2470617B00D53058 /* Barlow-ExtraBold.ttf */; };
+		37A565E32470617B00D53058 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D02470617B00D53058 /* Barlow-LightItalic.ttf */; };
+		37A565E42470617B00D53058 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D12470617B00D53058 /* Barlow-Bold.ttf */; };
+		37A565E52470617B00D53058 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D22470617B00D53058 /* OFL.txt */; };
+		37A565E62470617B00D53058 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D32470617B00D53058 /* Barlow-Medium.ttf */; };
+		37A565E72470617B00D53058 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D42470617B00D53058 /* Barlow-Regular.ttf */; };
+		37A565E82470617B00D53058 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D52470617B00D53058 /* Barlow-BlackItalic.ttf */; };
+		37A565E92470617B00D53058 /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D62470617B00D53058 /* Barlow-SemiBold.ttf */; };
+		37A565EA2470617B00D53058 /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37A565D72470617B00D53058 /* Barlow-Black.ttf */; };
+		37A565EC2471740800D53058 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A565EB2471740700D53058 /* StyleGuide.swift */; };
+		37A565EF2472D81300D53058 /* onboardingQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A565EE2472D81300D53058 /* onboardingQ1.swift */; };
+		37A565F12472DACF00D53058 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A565F02472DACF00D53058 /* Global.swift */; };
 		37B1EEA624685EC1005C3354 /* fhirmaptesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */; };
-		37B1EEA82468AE9D005C3354 /* does it work?.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEA72468AE9D005C3354 /* does it work?.swift */; };
 		37B1EEFF2469CF05005C3354 /* FHIR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EEFE2469CF05005C3354 /* FHIR.swift */; };
+		37B1EF042469CFBC005C3354 /* FHIRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EF032469CFBC005C3354 /* FHIRViewModel.swift */; };
+		37B1EF062469CFE8005C3354 /* FHIRDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EF052469CFE8005C3354 /* FHIRDatabase.swift */; };
+		37B1EF082469D032005C3354 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B1EF072469D032005C3354 /* APIClient.swift */; };
+		37CE2FB72472F11200F36017 /* profiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE2FB62472F11200F36017 /* profiles.swift */; };
+		37CE2FBA2473463400F36017 /* filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE2FB92473463400F36017 /* filters.swift */; };
+		37CE2FBC24736F5800F36017 /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE2FBB24736F5800F36017 /* map.swift */; };
+		37CE2FE824760F8E00F36017 /* filterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE2FE724760F8E00F36017 /* filterDetail.swift */; };
+		37CE2FEA2476213700F36017 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE2FE92476213700F36017 /* Notifications.swift */; };
 		37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BB244FBB610003A95E /* AppDelegate.swift */; };
 		37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BD244FBB610003A95E /* SceneDelegate.swift */; };
 		37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F742BF244FBB610003A95E /* Lavendale.xcdatamodeld */; };
@@ -36,6 +70,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		372CAD6224780A9200C195B4 /* newprofiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newprofiles.swift; sourceTree = "<group>"; };
+		372CAD67247843CA00C195B4 /* donorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donorProfile.swift; sourceTree = "<group>"; };
+		372CAD692478443500C195B4 /* providerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = providerProfile.swift; sourceTree = "<group>"; };
+		372CAD6B2478445D00C195B4 /* patientProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientProfile.swift; sourceTree = "<group>"; };
 		3788F830245CDAC300ACBD1E /* newCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newCharts.swift; sourceTree = "<group>"; };
 		3788F852245F4C1A00ACBD1E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3788F8562464578F00ACBD1E /* testingschedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingschedule.swift; sourceTree = "<group>"; };
@@ -44,9 +82,39 @@
 		3788F85C2464798C00ACBD1E /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		3793A3B7246790A0002B9A14 /* choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choice.swift; sourceTree = "<group>"; };
 		3799D7092456834300EECDFB /* testing schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "testing schedule.swift"; sourceTree = "<group>"; };
+		37A565C1247025F700D53058 /* bezzy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bezzy.swift; sourceTree = "<group>"; };
+		37A565C52470617B00D53058 /* Barlow-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Light.ttf"; sourceTree = "<group>"; };
+		37A565C62470617B00D53058 /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		37A565C72470617B00D53058 /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
+		37A565C82470617B00D53058 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		37A565C92470617B00D53058 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
+		37A565CA2470617B00D53058 /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
+		37A565CB2470617B00D53058 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
+		37A565CC2470617B00D53058 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		37A565CD2470617B00D53058 /* Barlow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		37A565CE2470617B00D53058 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
+		37A565CF2470617B00D53058 /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		37A565D02470617B00D53058 /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-LightItalic.ttf"; sourceTree = "<group>"; };
+		37A565D12470617B00D53058 /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		37A565D22470617B00D53058 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		37A565D32470617B00D53058 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		37A565D42470617B00D53058 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		37A565D52470617B00D53058 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
+		37A565D62470617B00D53058 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
+		37A565D72470617B00D53058 /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		37A565EB2471740700D53058 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		37A565EE2472D81300D53058 /* onboardingQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingQ1.swift; sourceTree = "<group>"; };
+		37A565F02472DACF00D53058 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fhirmaptesting.swift; sourceTree = "<group>"; };
-		37B1EEA72468AE9D005C3354 /* does it work?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "does it work?.swift"; sourceTree = "<group>"; };
 		37B1EEFE2469CF05005C3354 /* FHIR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHIR.swift; sourceTree = "<group>"; };
+		37B1EF032469CFBC005C3354 /* FHIRViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FHIRViewModel.swift; sourceTree = "<group>"; };
+		37B1EF052469CFE8005C3354 /* FHIRDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHIRDatabase.swift; sourceTree = "<group>"; };
+		37B1EF072469D032005C3354 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		37CE2FB62472F11200F36017 /* profiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profiles.swift; sourceTree = "<group>"; };
+		37CE2FB92473463400F36017 /* filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filters.swift; sourceTree = "<group>"; };
+		37CE2FBB24736F5800F36017 /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
+		37CE2FE724760F8E00F36017 /* filterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterDetail.swift; sourceTree = "<group>"; };
+		37CE2FE92476213700F36017 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		37F742B8244FBB610003A95E /* Lavendale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lavendale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F742BB244FBB610003A95E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F742BD244FBB610003A95E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +145,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372CAD642478438300C195B4 /* Patient Profile */ = {
+			isa = PBXGroup;
+			children = (
+				372CAD6B2478445D00C195B4 /* patientProfile.swift */,
+			);
+			path = "Patient Profile";
+			sourceTree = "<group>";
+		};
+		372CAD652478439100C195B4 /* Donor Profile */ = {
+			isa = PBXGroup;
+			children = (
+				372CAD67247843CA00C195B4 /* donorProfile.swift */,
+			);
+			path = "Donor Profile";
+			sourceTree = "<group>";
+		};
+		372CAD662478439B00C195B4 /* Provider Profile */ = {
+			isa = PBXGroup;
+			children = (
+				372CAD692478443500C195B4 /* providerProfile.swift */,
+			);
+			path = "Provider Profile";
+			sourceTree = "<group>";
+		};
+		37A565C42470617B00D53058 /* Barlow */ = {
+			isa = PBXGroup;
+			children = (
+				37A565C52470617B00D53058 /* Barlow-Light.ttf */,
+				37A565C62470617B00D53058 /* Barlow-SemiBoldItalic.ttf */,
+				37A565C72470617B00D53058 /* Barlow-BoldItalic.ttf */,
+				37A565C82470617B00D53058 /* Barlow-ExtraLight.ttf */,
+				37A565C92470617B00D53058 /* Barlow-ThinItalic.ttf */,
+				37A565CA2470617B00D53058 /* Barlow-MediumItalic.ttf */,
+				37A565CB2470617B00D53058 /* Barlow-Italic.ttf */,
+				37A565CC2470617B00D53058 /* Barlow-ExtraLightItalic.ttf */,
+				37A565CD2470617B00D53058 /* Barlow-ExtraBoldItalic.ttf */,
+				37A565CE2470617B00D53058 /* Barlow-Thin.ttf */,
+				37A565CF2470617B00D53058 /* Barlow-ExtraBold.ttf */,
+				37A565D02470617B00D53058 /* Barlow-LightItalic.ttf */,
+				37A565D12470617B00D53058 /* Barlow-Bold.ttf */,
+				37A565D22470617B00D53058 /* OFL.txt */,
+				37A565D32470617B00D53058 /* Barlow-Medium.ttf */,
+				37A565D42470617B00D53058 /* Barlow-Regular.ttf */,
+				37A565D52470617B00D53058 /* Barlow-BlackItalic.ttf */,
+				37A565D62470617B00D53058 /* Barlow-SemiBold.ttf */,
+				37A565D72470617B00D53058 /* Barlow-Black.ttf */,
+			);
+			name = Barlow;
+			path = Barlow/Barlow;
+			sourceTree = "<group>";
+		};
+		37A565ED2472CC7800D53058 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				37A565F02472DACF00D53058 /* Global.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		37A565F22472DC6B00D53058 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				37A565EE2472D81300D53058 /* onboardingQ1.swift */,
+				37A565C1247025F700D53058 /* bezzy.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		37A565F32472DC9400D53058 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				37F742BD244FBB610003A95E /* SceneDelegate.swift */,
+				37F742BB244FBB610003A95E /* AppDelegate.swift */,
+				37F742C2244FBB610003A95E /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		37B1EF002469CF92005C3354 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				37B1EF032469CFBC005C3354 /* FHIRViewModel.swift */,
+				37B1EF052469CFE8005C3354 /* FHIRDatabase.swift */,
+				37B1EF072469D032005C3354 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		37CE2FB52472F0FC00F36017 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				372CAD662478439B00C195B4 /* Provider Profile */,
+				372CAD652478439100C195B4 /* Donor Profile */,
+				37CE2FB62472F11200F36017 /* profiles.swift */,
+				372CAD6224780A9200C195B4 /* newprofiles.swift */,
+				37CE2FE92476213700F36017 /* Notifications.swift */,
+				372CAD642478438300C195B4 /* Patient Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		37CE2FB82473461B00F36017 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				37CE2FB92473463400F36017 /* filters.swift */,
+				37CE2FBB24736F5800F36017 /* map.swift */,
+				37CE2FE724760F8E00F36017 /* filterDetail.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		37F742AF244FBB610003A95E = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +275,14 @@
 		37F742BA244FBB610003A95E /* Lavendale */ = {
 			isa = PBXGroup;
 			children = (
-				37F742BB244FBB610003A95E /* AppDelegate.swift */,
-				37F742BD244FBB610003A95E /* SceneDelegate.swift */,
-				37F742C2244FBB610003A95E /* ContentView.swift */,
+				37CE2FB82473461B00F36017 /* Map */,
+				37CE2FB52472F0FC00F36017 /* Profile */,
+				37A565F22472DC6B00D53058 /* Onboarding */,
+				37A565ED2472CC7800D53058 /* Componets */,
+				37A565F32472DC9400D53058 /* Application */,
 				37F742D2244FC4960003A95E /* DonorView.swift */,
 				37B1EEA524685EC1005C3354 /* fhirmaptesting.swift */,
+				37B1EF002469CF92005C3354 /* Networking */,
 				37F742E62450D05F0003A95E /* Model */,
 				37F742D4244FC5640003A95E /* HomeView.swift */,
 				3788F830245CDAC300ACBD1E /* newCharts.swift */,
@@ -109,12 +291,12 @@
 				3788F8582464797D00ACBD1E /* Today.swift */,
 				3788F85A2464798600ACBD1E /* Tomorrow.swift */,
 				3788F85C2464798C00ACBD1E /* Week.swift */,
+				37A565EB2471740700D53058 /* StyleGuide.swift */,
 				37F8C7322458D38800409F34 /* testing charts.swift */,
 				3788F8562464578F00ACBD1E /* testingschedule.swift */,
 				3793A3B7246790A0002B9A14 /* choice.swift */,
 				37F742DF2450A5620003A95E /* paitentView.swift */,
 				37F742E42450ACFC0003A95E /* sample data.swift */,
-				37B1EEA72468AE9D005C3354 /* does it work?.swift */,
 				37F742D6244FCF500003A95E /* Fonts */,
 				37F742C4244FBB620003A95E /* Assets.xcassets */,
 				37F742C9244FBB620003A95E /* LaunchScreen.storyboard */,
@@ -136,6 +318,7 @@
 		37F742D6244FCF500003A95E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				37A565C42470617B00D53058 /* Barlow */,
 				37F742D7244FCF5B0003A95E /* Morjuis.ttf */,
 				37F742D9244FCF6B0003A95E /* PollyRounded-Regular.ttf */,
 			);
@@ -211,9 +394,28 @@
 			files = (
 				37F742DA244FCF6B0003A95E /* PollyRounded-Regular.ttf in Resources */,
 				37F742D8244FCF5B0003A95E /* Morjuis.ttf in Resources */,
+				37A565E12470617B00D53058 /* Barlow-Thin.ttf in Resources */,
+				37A565E82470617B00D53058 /* Barlow-BlackItalic.ttf in Resources */,
+				37A565DB2470617B00D53058 /* Barlow-ExtraLight.ttf in Resources */,
+				37A565EA2470617B00D53058 /* Barlow-Black.ttf in Resources */,
+				37A565E02470617B00D53058 /* Barlow-ExtraBoldItalic.ttf in Resources */,
+				37A565D82470617B00D53058 /* Barlow-Light.ttf in Resources */,
+				37A565E62470617B00D53058 /* Barlow-Medium.ttf in Resources */,
+				37A565DC2470617B00D53058 /* Barlow-ThinItalic.ttf in Resources */,
 				37F742CB244FBB620003A95E /* LaunchScreen.storyboard in Resources */,
+				37A565E92470617B00D53058 /* Barlow-SemiBold.ttf in Resources */,
+				37A565E42470617B00D53058 /* Barlow-Bold.ttf in Resources */,
+				37A565E52470617B00D53058 /* OFL.txt in Resources */,
+				37A565DA2470617B00D53058 /* Barlow-BoldItalic.ttf in Resources */,
+				37A565E22470617B00D53058 /* Barlow-ExtraBold.ttf in Resources */,
+				37A565E72470617B00D53058 /* Barlow-Regular.ttf in Resources */,
 				37F742C8244FBB620003A95E /* Preview Assets.xcassets in Resources */,
 				37F742C5244FBB620003A95E /* Assets.xcassets in Resources */,
+				37A565DF2470617B00D53058 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				37A565DD2470617B00D53058 /* Barlow-MediumItalic.ttf in Resources */,
+				37A565D92470617B00D53058 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				37A565E32470617B00D53058 /* Barlow-LightItalic.ttf in Resources */,
+				37A565DE2470617B00D53058 /* Barlow-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,27 +426,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372CAD68247843CA00C195B4 /* donorProfile.swift in Sources */,
 				3793A3B8246790A0002B9A14 /* choice.swift in Sources */,
 				37B1EEFF2469CF05005C3354 /* FHIR.swift in Sources */,
+				37A565EF2472D81300D53058 /* onboardingQ1.swift in Sources */,
 				37F742E52450ACFC0003A95E /* sample data.swift in Sources */,
 				3788F8592464797D00ACBD1E /* Today.swift in Sources */,
+				37CE2FE824760F8E00F36017 /* filterDetail.swift in Sources */,
+				37CE2FB72472F11200F36017 /* profiles.swift in Sources */,
 				37B1EEA624685EC1005C3354 /* fhirmaptesting.swift in Sources */,
+				37CE2FEA2476213700F36017 /* Notifications.swift in Sources */,
+				37B1EF042469CFBC005C3354 /* FHIRViewModel.swift in Sources */,
 				3788F85B2464798600ACBD1E /* Tomorrow.swift in Sources */,
 				37F742BC244FBB610003A95E /* AppDelegate.swift in Sources */,
+				37B1EF062469CFE8005C3354 /* FHIRDatabase.swift in Sources */,
 				37F742E02450A5620003A95E /* paitentView.swift in Sources */,
 				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
-				37B1EEA82468AE9D005C3354 /* does it work?.swift in Sources */,
+				372CAD6A2478443500C195B4 /* providerProfile.swift in Sources */,
+				37CE2FBA2473463400F36017 /* filters.swift in Sources */,
+				37B1EF082469D032005C3354 /* APIClient.swift in Sources */,
 				37F742BE244FBB610003A95E /* SceneDelegate.swift in Sources */,
 				3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */,
 				3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */,
+				37CE2FBC24736F5800F36017 /* map.swift in Sources */,
 				37F742D5244FC5640003A95E /* HomeView.swift in Sources */,
 				37F742E82450D06E0003A95E /* patient.swift in Sources */,
 				3788F8572464578F00ACBD1E /* testingschedule.swift in Sources */,
+				37A565EC2471740800D53058 /* StyleGuide.swift in Sources */,
+				37A565C2247025F800D53058 /* bezzy.swift in Sources */,
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
 				3788F85D2464798C00ACBD1E /* Week.swift in Sources */,
+				372CAD6324780A9200C195B4 /* newprofiles.swift in Sources */,
 				3799D70A2456834300EECDFB /* testing schedule.swift in Sources */,
 				37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */,
+				372CAD6C2478445D00C195B4 /* patientProfile.swift in Sources */,
 				37F8C7332458D38800409F34 /* testing charts.swift in Sources */,
+				37A565F12472DACF00D53058 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;
@@ -402,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"Lavendale/Preview Content\"";
 				DEVELOPMENT_TEAM = 25Y24L598Y;
 				ENABLE_PREVIEWS = YES;

@@ -16,11 +16,11 @@ struct ContentView: View {
     var body: some View {
         TabView{
          
-            HomeView().tabItem{
+            profiles().tabItem{
                           Text("Home")
                 Image(systemName: "house")
                       }
-            DonorView().tabItem{
+            map().tabItem{
                 Text("Donors")
                 Image(systemName: "person.3")
             }
@@ -28,12 +28,14 @@ struct ContentView: View {
                          Text("Tally")
                          Image(systemName: "chart.bar")
                      }
+            }
+
       
           
             
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

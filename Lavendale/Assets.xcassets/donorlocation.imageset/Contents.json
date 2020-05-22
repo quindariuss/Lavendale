@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Splash Screen.png",
+      "filename" : "donorlocation.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Splash Screen@2x.png",
+      "filename" : "donorlocation@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Splash Screen@3x.png",
+      "filename" : "donorlocation@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

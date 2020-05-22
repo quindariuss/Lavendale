@@ -24,31 +24,35 @@ struct newCharts: View {
         
         GeometryReader { geo in
             NavigationView {
-                VStack {
-                    Picker(selection: self.$selectedFilter, label: Text("Choose a map")){
-                        ForEach(0 ..< self.filterType.count){
-                                           Text(self.filterType[$0])
-                                       }
-                                   }.pickerStyle(SegmentedPickerStyle())
-                    
-                    if self.selectedFilter == 0 {
-                        Picker(selection: self.$selectedBloodType, label: Text("Choose a blood type")){
-                            ForEach(0 ..< self.bloodTypes.count){
-                                Text(self.bloodTypes[$0])
-                                
-                            }
-                        }.pickerStyle(SegmentedPickerStyle())
-                    }
-                    
-                    
-                    ZStack {
-                        //                        curvy2().offset(x: -(geo.size.width * CGFloat(Int(self.selectedBloodType))), y: -20).fill(Color.red).blendMode(.hardLight).animation(.spring())
-                        curvy2().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).blendMode(.hardLight).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
-
-                        curvy().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
+                ZStack {
+                       Rectangle().edgesIgnoringSafeArea(.all).foregroundColor(Color(iceBlue)).zIndex(0)
+                    VStack {
+                        Picker(selection: self.$selectedFilter, label: Text("Choose a map")){
+                            ForEach(0 ..< self.filterType.count){
+                                               Text(self.filterType[$0])
+                                           }
+                                       }.pickerStyle(SegmentedPickerStyle())
                         
-                    }
-                }.navigationBarTitle("Blood Needed Beta")
+                        if self.selectedFilter == 0 {
+                            Picker(selection: self.$selectedBloodType, label: Text("Choose a blood type")){
+                                ForEach(0 ..< self.bloodTypes.count){
+                                    Text(self.bloodTypes[$0])
+                                    
+                                }
+                            }.pickerStyle(SegmentedPickerStyle())
+                        }
+                        
+                        
+                        ZStack {
+                            //                        curvy2().offset(x: -(geo.size.width * CGFloat(Int(self.selectedBloodType))), y: -20).fill(Color.red).blendMode(.hardLight).animation(.spring())
+                            curvy2().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).blendMode(.hardLight).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
+
+                            curvy().offset(x: self.selectedFilter == 1 ?0: (-(geo.size.width * CGFloat(Int(self.selectedBloodType))))).fill(Color.red).animation(.easeInOut(duration: 1)).frame(width: self.selectedFilter == 1 ? geo.size.width/7 : nil ).offset(x: self.selectedFilter == 1 ? -geo.size.width/2.32 : 0)
+                        
+                            
+                        }
+                    }.navigationBarTitle("Blood Needed")
+                }
             }
         }
     }

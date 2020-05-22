@@ -26,6 +26,12 @@
 	<array>
 		<string>Morjuis.ttf</string>
 		<string>PollyRounded-Regular.ttf</string>
+		<string>Barlow-Light.ttf</string>
+		<string>Barlow-Medium.ttf</string>
+		<string>Barlow-ExtraBold.ttf</string>
+		<string>Barlow-Bold.ttf</string>
+		<string>Barlow-SemiBold.ttf</string>
+		<string>Barlow-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

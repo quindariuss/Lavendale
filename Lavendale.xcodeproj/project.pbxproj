@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		372CAD6324780A9200C195B4 /* newprofiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD6224780A9200C195B4 /* newprofiles.swift */; };
+		372CAD6324780A9200C195B4 /* profileTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD6224780A9200C195B4 /* profileTabs.swift */; };
 		372CAD68247843CA00C195B4 /* donorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD67247843CA00C195B4 /* donorProfile.swift */; };
 		372CAD6A2478443500C195B4 /* providerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD692478443500C195B4 /* providerProfile.swift */; };
 		372CAD6C2478445D00C195B4 /* patientProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CAD6B2478445D00C195B4 /* patientProfile.swift */; };
+		373C3EAB2479BEFB00353D60 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C3EAA2479BEFB00353D60 /* TextBox.swift */; };
 		3788F831245CDAC300ACBD1E /* newCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F830245CDAC300ACBD1E /* newCharts.swift */; };
 		3788F853245F4C1A00ACBD1E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F852245F4C1A00ACBD1E /* ChatView.swift */; };
 		3788F8572464578F00ACBD1E /* testingschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788F8562464578F00ACBD1E /* testingschedule.swift */; };
@@ -70,10 +71,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		372CAD6224780A9200C195B4 /* newprofiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newprofiles.swift; sourceTree = "<group>"; };
+		372CAD6224780A9200C195B4 /* profileTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileTabs.swift; sourceTree = "<group>"; };
 		372CAD67247843CA00C195B4 /* donorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = donorProfile.swift; sourceTree = "<group>"; };
 		372CAD692478443500C195B4 /* providerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = providerProfile.swift; sourceTree = "<group>"; };
 		372CAD6B2478445D00C195B4 /* patientProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patientProfile.swift; sourceTree = "<group>"; };
+		373C3EAA2479BEFB00353D60 /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 		3788F830245CDAC300ACBD1E /* newCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newCharts.swift; sourceTree = "<group>"; };
 		3788F852245F4C1A00ACBD1E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3788F8562464578F00ACBD1E /* testingschedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingschedule.swift; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 			path = "Provider Profile";
 			sourceTree = "<group>";
 		};
+		373C3EA92479BE9100353D60 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				373C3EAA2479BEFB00353D60 /* TextBox.swift */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
 		37A565C42470617B00D53058 /* Barlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,12 +246,12 @@
 		37CE2FB52472F0FC00F36017 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				37CE2FB62472F11200F36017 /* profiles.swift */,
+				372CAD6224780A9200C195B4 /* profileTabs.swift */,
+				372CAD642478438300C195B4 /* Patient Profile */,
 				372CAD662478439B00C195B4 /* Provider Profile */,
 				372CAD652478439100C195B4 /* Donor Profile */,
-				37CE2FB62472F11200F36017 /* profiles.swift */,
-				372CAD6224780A9200C195B4 /* newprofiles.swift */,
 				37CE2FE92476213700F36017 /* Notifications.swift */,
-				372CAD642478438300C195B4 /* Patient Profile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -275,6 +285,7 @@
 		37F742BA244FBB610003A95E /* Lavendale */ = {
 			isa = PBXGroup;
 			children = (
+				373C3EA92479BE9100353D60 /* Messenger */,
 				37CE2FB82473461B00F36017 /* Map */,
 				37CE2FB52472F0FC00F36017 /* Profile */,
 				37A565F22472DC6B00D53058 /* Onboarding */,
@@ -442,6 +453,7 @@
 				37B1EF062469CFE8005C3354 /* FHIRDatabase.swift in Sources */,
 				37F742E02450A5620003A95E /* paitentView.swift in Sources */,
 				37F742D3244FC4960003A95E /* DonorView.swift in Sources */,
+				373C3EAB2479BEFB00353D60 /* TextBox.swift in Sources */,
 				372CAD6A2478443500C195B4 /* providerProfile.swift in Sources */,
 				37CE2FBA2473463400F36017 /* filters.swift in Sources */,
 				37B1EF082469D032005C3354 /* APIClient.swift in Sources */,
@@ -456,7 +468,7 @@
 				37A565C2247025F800D53058 /* bezzy.swift in Sources */,
 				37F742C3244FBB610003A95E /* ContentView.swift in Sources */,
 				3788F85D2464798C00ACBD1E /* Week.swift in Sources */,
-				372CAD6324780A9200C195B4 /* newprofiles.swift in Sources */,
+				372CAD6324780A9200C195B4 /* profileTabs.swift in Sources */,
 				3799D70A2456834300EECDFB /* testing schedule.swift in Sources */,
 				37F742C1244FBB610003A95E /* Lavendale.xcdatamodeld in Sources */,
 				372CAD6C2478445D00C195B4 /* patientProfile.swift in Sources */,

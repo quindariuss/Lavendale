@@ -10,6 +10,7 @@ import SwiftUI
 import MapKit
 
 struct map: View {
+    @State var zipCode = ""
     @ObservedObject var viewModel = FHIRViewModel()
      @State var people: [annotation] = [annotation(title: "hello", subtitle: "world", coordinate: CLLocationCoordinate2D(latitude: 43.063, longitude: -84.4424))]
     var body: some View {
@@ -30,7 +31,7 @@ struct map: View {
                             
                             RoundedRectangle(cornerRadius: 2).fill(Color(paleGrey)).frame(width: 1, height: 30).padding(.leading)
                             Spacer()
-                            Text("ZIPCODE").foregroundColor(Color(slate).opacity(0.2)).font(.custom("Barlow-ExtraBold", size: 16))
+                            TextField("ZIPCODE", text: $zipCode).foregroundColor(Color(slate).opacity(0.2)).font(.custom("Barlow-ExtraBold", size: 16))
                             Spacer()
                         }.frame(width: 150)
                     }

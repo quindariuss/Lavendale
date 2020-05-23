@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct newprofiles: View {
+struct profileTabs: View {
     var profileChoices = ["patient","provider","donor"]
     @State var profileChoice = 0
     let gradientColors = Gradient(colors: [.white, Color(iceBlue)])
@@ -43,7 +43,7 @@ struct newprofiles: View {
 
 struct newprofiles_Previews: PreviewProvider {
     static var previews: some View {
-        newprofiles()
+        profileTabs()
     }
 }
 

@@ -29,40 +29,8 @@ struct profiles: View {
                         
                     }
                     //Profile tabs
-                    newprofiles()
-//                    HStack(spacing: 3){
-//                        Text("Profiles").kerning(1).padding(.leading,24).offset(y: 15).font(.custom("Barlow-SemiBold", size: 18)).foregroundColor(Color(slate))
-//                        Spacer()
-//
-//                        Text("PATIENT").kerning(1).foregroundColor(.white).offset(y: -5).frame(width: tabSize,height: tabHeight).background(Color(coral).opacity(profileChoice == 0 ? 1 :0.1)).cornerRadius(10).offset(y: 20).font(.custom("Barlow-Bold", size: 15)).onTapGesture {
-//                            self.profileChoice = 0
-//                        }
-//
-//                        Text("PROVIDER").kerning(1).foregroundColor(.white).offset(y: -5).frame(width: tabSize+5,height: tabHeight).zIndex(1).background(Color(dark).opacity(profileChoice == 1 ? 1 :0.1)).cornerRadius(10).offset(y: 20).font(.custom("Barlow-Bold", size: 15)).onTapGesture {
-//                            self.profileChoice = 1
-//                        }
-//
-//                        Text("DONOR").kerning(1).foregroundColor(.white).offset(y: -5).frame(width: tabSize,height: tabHeight).zIndex(20).background(Color(wintergreen).opacity(profileChoice == 2 ? 1 :0.2)).cornerRadius(10).offset(y: 20).font(.custom("Barlow-Bold", size: 15)).onTapGesture {
-//                            self.profileChoice = 2
-//                        }
-//
-//                        Spacer()
-//                        }.frame(height: 30)
-//                    //Blended Card Background
-//                    ZStack {
-//
-//                        RoundedRectangle(cornerRadius: 20).fill(LinearGradient(gradient: gradientColors, startPoint: .top, endPoint: .bottom)).padding(.horizontal, 5).frame(height: 350)
-//                        VStack {
-//                            HStack {
-//                                Text("Quin'darius\nLyles-Woods").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate)).padding([.top, .leading], 32).padding(.bottom)
-//                                Spacer()
-//                            }
-//                            Spacer()
-//                        }
-//                        //Blood type etc
-//                        profileDetails().padding(.top, 100)
-//
-//                    }
+                    profileTabs()
+
                     HStack {
                         Text("Posts").kerning(0.75).font(.custom("Barlow-Semibold", size: 24)).padding(.leading, 24).foregroundColor(Color(slate))
                         Spacer()

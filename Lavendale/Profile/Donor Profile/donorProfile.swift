@@ -10,13 +10,12 @@ import SwiftUI
 
 struct donorProfile: View {
     var body: some View {
-        VStack {
-            HStack {
-                Text("Quin'darius\nLyles-Woods").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate)).padding([.top, .leading], 32)
-                Spacer()
+           VStack {
+                HStack {
+                    Text("Donor Page Unavailable").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate).opacity(0.2)).padding([.top, .leading], 32)
+                    
+                }
             }
-            profileDetails()
-        }
     }
 }
 

@@ -38,9 +38,9 @@ struct ContentMessageView: View {
     var body: some View {
         Text(contentMessage)
             .padding(10)
-            .foregroundColor(isCurrentUser ? Color.white : Color.black)
-            .background(isCurrentUser ? Color.blue : Color(UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)))
-            .cornerRadius(10)
+            .foregroundColor(Color(slate))
+            .overlay(RoundedRectangle(cornerRadius: 18).stroke().fill(isCurrentUser ? Color(wintergreen) : Color(coral)))
+            
     }
 }
 

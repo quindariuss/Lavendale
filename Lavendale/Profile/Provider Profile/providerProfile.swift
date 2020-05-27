@@ -12,10 +12,9 @@ struct providerProfile: View {
     var body: some View {
         VStack {
             HStack {
-                Text("NewScreen").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate)).padding([.top, .leading], 32)
-                Spacer()
+                Text("Provider Page Unavailable").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate).opacity(0.2)).padding([.top, .leading], 32)
+                
             }
-            profileDetails()
         }
     }
 }

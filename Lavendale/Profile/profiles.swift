@@ -24,7 +24,7 @@ struct profiles: View {
                 ScrollView {
                     //Logo
                     HStack{
-                        logo().scaleEffect(0.5).frame(width: 40, height: 40).padding( .leading, 32.0)
+                        Logo().scaleEffect(0.1).frame(width: 40, height: 40).padding([ .leading, .bottom], 32.0)
                         Spacer()
                         
                     }
@@ -57,7 +57,21 @@ struct personalProfile_Previews: PreviewProvider {
 }
 
 struct profileDetails: View {
-    
+    @State var chatSheet = false
+    @State var settingSheet = false
+    @State var recordSheet = false
+    let chatHelper = ChatHelper()
+    @State var showDocs = false
+     @State var firstname = ""
+     @State var lastname = ""
+     @State var bloodType = ""
+     @State var phone = ""
+     @State var posCovid = false
+     @State var birthdate = Date.init()
+     @State var docsugCovid = false
+     @State var covidDocs = false
+     @State var willTest = UserDefaults.standard.bool(forKey: "willTest")
+
     var body: some View {
         ZStack {VStack {
             Spacer()
@@ -87,16 +101,28 @@ struct profileDetails: View {
                         VStack {
                             Image(systemName: "bubble.left.and.bubble.right").font(.system(size: 24)).foregroundColor(Color(dullBlue))
                             Text("Chat").padding(.bottom,32).font(.custom("PollyRounded-Regular", size: 16)).foregroundColor(Color(blueyGrey))
-                        }.frame(width: 80)
+                        }.frame(width: 80).onTapGesture {
+                            self.chatSheet.toggle()
+                        }.sheet(isPresented: $chatSheet){
+                            ChatView().environmentObject(self.chatHelper)
+                        }
                         Spacer()
                         VStack {
-                            Image(systemName: "briefcase").font(.system(size: 24)).foregroundColor(Color(dullBlue))
+                            Image(systemName: "briefcase").font(.system(size: 24)).foregroundColor(Color(darkBeige))
                             Text("Records").padding(.bottom,32).font(.custom("PollyRounded-Regular", size: 16)).foregroundColor(Color(blueyGrey))
+                        }.onTapGesture {
+                            self.recordSheet.toggle()
+                        }.sheet(isPresented: $recordSheet){
+                            Profile(firstname: self.$firstname, lastname: self.$lastname, birthdate: self.$birthdate, bloodType: self.$bloodType, phone: self.$phone, posCovid: self.$posCovid,docsugCovid: self.$docsugCovid, willTest: self.$willTest, covidDocs:self.$covidDocs )
                         }
                         Spacer()
                         VStack {
                             Image(systemName: "gear").font(.system(size: 24)).foregroundColor(Color(dullBlue))
                             Text("Settings").padding(.bottom,32).font(.custom("PollyRounded-Regular", size: 16)).foregroundColor(Color(blueyGrey))
+                        }.onTapGesture {
+                            self.settingSheet.toggle()
+                        }.sheet(isPresented: $settingSheet){
+                            Text("Hello Settings")
                         }
                         
                     }
@@ -125,7 +151,7 @@ struct post: View {
                     }
                     Spacer()
                     
-                    logo().scaleEffect(0.5).frame(width: 10,height: 10).offset(y: -30)
+                    Logo().scaleEffect(0.07).frame(width: 10,height: 10).offset(y: -30)
                     
                 }.padding(.top, 32)
                 Text("My Mom and Dad have also tested positive for COVID-19 and are in really bad shape in the ICU. Is anyone donating A+ Plasma? ").font(.custom("Barlow-Regular", size: 14)).foregroundColor(Color(blueyGrey))

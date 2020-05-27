@@ -39,7 +39,10 @@ struct map: View {
                 Spacer()
             }
                 
-            filters().offset(y: 100)
+            VStack {
+                Spacer()
+                filters().padding(.bottom)
+            }
             
         }
         

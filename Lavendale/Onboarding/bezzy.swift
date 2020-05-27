@@ -26,7 +26,10 @@ struct bezzy: View {
             VStack {
                    
                     
-                logo().padding(.leading, 32.0).frame(height: 120).offset(x: 25, y: 20)
+                
+                Logo().scaleEffect(0.1).offset(x: -150).frame(width: 20, height: 50)
+                   
+                
                 
                 line2().stroke(lineWidth: 3).fill(Color(palePeach)).frame(height: 100)
                       

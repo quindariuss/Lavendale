@@ -10,13 +10,15 @@ import SwiftUI
 
 struct patientProfile: View {
     var body: some View {
-        VStack {
+        ZStack {
             HStack {
                 Text("Quin'darius\nLyles-Woods").font(.custom("Barlow-Bold", size: 32)).foregroundColor(Color(slate)).padding([.top, .leading], 32)
                 Spacer()
-            }
+            }.offset(y: -180)
             profileDetails()
-        }
+            
+        }.padding(.top, 120)
+        
     }
 }
 
